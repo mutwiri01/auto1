@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import merc1 from "../../img/merc1.jpg";
+import mit1 from "../../img/mit1.png";
+import lgo2 from "../../img/lgo2.jpg";
+import bm1 from "../../img/bm1.jpg";
+import toy1 from "../../img/toy1.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -21,22 +20,18 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+          Autopec 
           </span>
-          <span>Brands & Clients</span>
+          <span>Mutiple Brands</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+           we understand that the automotive world 
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            is a tapestry woven with various car brands.
             <br />
-            y dummy text of printingLorem
+            Autopec expertly incorporates
             <br />
-            ispum is simpley dummy text of printing
+            multiple car brands into our automotive care
           </spane>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Hire Me</button>
-          </Link>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -54,19 +49,19 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={merc1} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={mit1} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={lgo2} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={bm1} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={toy1} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}

@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import w3 from "../../img/w3.png";
+import d1 from "../../img/d1.png";
+import e1 from "../../img/e1.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
 
 const Services = () => {
   // context
@@ -24,16 +23,13 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
+        <span style={{ color: darkMode ? "white" : "" }}>Experience the difference at</span>
+        <span>Autopec</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+        Your one-stop solution for all your car maintenance and repair needs
           <br />
-          ispum is simpley dummy text of printing
+          Drive with confidence; drive with Autopec!
         </spane>
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
-        </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
@@ -45,9 +41,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            emoji={w3}
+            heading={"Skilled and Certified Technicians"}
+            detail={" Trust your vehicle to our certified experts who have the knowledge and experience to handle any car issue"}
           />
         </motion.div>
         {/* second card */}
@@ -57,9 +53,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            emoji={d1}
+            heading={"State-of-the-Art Equipment"}
+            detail={"We use cutting-edge equipment and technology to diagnose and repair vehicles with precision"}
           />
         </motion.div>
         {/* 3rd */}
@@ -69,10 +65,10 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Humble}
-            heading={"UI/UX"}
+            emoji={e1}
+            heading={"Fast and Efficient Turnaround Times"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Count on us for quick and efficient service, minimizing downtime for your vehicle"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
