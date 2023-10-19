@@ -32,7 +32,7 @@
 
 /* Set a fixed height for each slide */
 .portfolio-slider .swiper-slide {
-  height: 400px; /* Adjust the height as needed */
+  height: auto; /* Auto height to accommodate content */
   display: flex;
   flex-direction: column; /* Display content vertically */
   align-items: center; /* Center content horizontally */
@@ -41,11 +41,16 @@
 
 /* Style the image within the slide */
 .portfolio img {
-  max-height: 100%; /* Limit the image height */
-  width: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Limit the image width to fit the content */
+  height: auto; /* Maintain aspect ratio */
   vertical-align: top; /* Align the image with the top of the content */
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 19px;
+}
+
+/* Add spacing between each slide */
+.portfolio-slider .swiper-slide + .swiper-slide {
+  margin-top: 2rem; /* Adjust the margin as needed */
 }
 
 /* Media query for small screens */
