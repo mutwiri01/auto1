@@ -67,3 +67,10 @@
     font-size: 1rem; /* Reduce font size for smaller screens */
   }
 }
+
+/* Media query for larger screens */
+@media screen and (min-width: 1024px) {
+  .portfolio-slider .swiper-slide {
+    max-width: 600px; /* Limit the content width for larger screens */
+  }
+}
