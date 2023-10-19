@@ -21,25 +21,33 @@ const Portfolio = () => {
       {/* slider */}
       <Swiper
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1} 
         grabCursor={true}
         className="portfolio-slider"
       >
         <SwiperSlide>
           <img src={n1} alt="" />
           <h1>Engine Overhaul:</h1>
+          <h2>
+            Our certified technicians specialize in engine overhauls, breathing new life into your vehicle's heart.
+          </h2>
         </SwiperSlide>
         <SwiperSlide>
           <img src={g1} alt="" />
           <h1>Gearbox Repairs:</h1>
+          <h2>
+            Our gearbox repair experts are equipped to diagnose and fix any transmission issues, whether it's a manual or automatic gearbox.
+          </h2>
         </SwiperSlide>
         <SwiperSlide>
           <img src={p1} alt="" />
           <h1>Paint Spraying:</h1>
+          <h2>Restore your vehicle's appearance with our top-notch paint spraying services.</h2>
         </SwiperSlide>
         <SwiperSlide>
           <img src={s1} alt="" />
           <h1>Brake and Suspension Services</h1>
+          <h2>From brake pad replacements to suspension system upgrades, we've got you covered.</h2>
         </SwiperSlide>
       </Swiper>
     </div>
