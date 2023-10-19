@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import "swiper/css";
 import n1 from "../../img/n1.jpg";
 import g1 from "../../img/g1.jpg";
@@ -20,9 +21,11 @@ const Portfolio = () => {
 
       {/* slider */}
       <Swiper
+        modules={[Pagination]}
         spaceBetween={30}
-        slidesPerView={1} 
+        slidesPerView={1}
         grabCursor={true}
+        pagination={{ clickable: true }}
         className="portfolio-slider"
       >
         <SwiperSlide>

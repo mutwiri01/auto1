@@ -71,6 +71,7 @@
 /* Media query for larger screens */
 @media screen and (min-width: 1024px) {
   .portfolio-slider .swiper-slide {
-    max-width: 600px; /* Limit the content width for larger screens */
+    max-width: 600px;
+    --swiper-autoplay: 4000ms; /* Limit the content width for larger screens */
   }
 }
